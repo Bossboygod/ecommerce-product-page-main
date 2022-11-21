@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    margin: 0rem 0rem 0rem 8rem;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    margin: 0rem 0rem 0rem 4rem ;
+}
+.menu li{
+    padding: 0.313rem 0.875rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+li a{
+    color: hsl(219, 9%, 45%);
+}
+li a:hover{
+    color: black;
+    border-bottom: hsl(26, 100%, 55%);
+}
+.farright{
+    margin: 0rem 0rem 0rem 1rem;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 40%;
+}
+.avatar img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+}
+hr{
+    width: 84%;
+    margin-left: 9.2rem;
+    border-top: 1px solid hsl(223, 64%, 98%);
+}
+.middle{
+    width: 1075px;
+    height: auto;
+    display: flex;
+    margin: 4rem 0rem 0rem 12rem;
+}
+.head{
+    width: 40%;
+}
+.head img{
+    width: 90%;
+    border-radius:7%;
+}
+.subimages{
+    margin: 2rem 0rem 0rem 10rem;
+}
+.subimages img{
+        width: 5%;
+        border-radius: 10%;
+        margin-left: 2rem;     
+}
+.subimages img:hover{
+    opacity: 0.4;
+    border: 3px solid hsl(26, 100%, 55%);
+}
+.subtext{
+    width: 60% ;
+    margin: 0 0 0 0;
+    padding: 2%;
+}
+.subtext h2{
+    color:  hsl(26, 100%, 55%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.subtext h3{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 3% 0% 5% 0%;
+    
+}
+.subtext p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(220, 14%, 75%);
+}
+.digits{
+    padding: 5% 0% 3% 0%;
+}
+.digits h4{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+}
+.fifty{
+    margin-left: 1rem;
+    font-size: 20px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 20% ;
+    padding: 1%;
+}
+.digits p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-top: 0.5rem ;
+}
+.cart{
+    display: flex;
+    
+}
+.images{
+    width: 30%;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10%;
+    padding: 3%;
+}
+.grey{
+   padding: 8%;
+}
+.cart2{
+    width: 60%;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10%;
+    margin-left: 2rem;
+    color: white;
+    text-align: center;
+    box-shadow: 20px 20px 18px 0px hsl(25, 100%, 86%);
+}
+.cart2 img{
+    margin-top: 0.6rem;
+}
+.cart a{
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.icon{
+    width: 7%;
+}
+.add{
+    font-size: 12px;
+    margin-left: 1rem;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 0.625rem 3.875rem 0rem 3.875rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6rem 0 0 25rem;
+    padding: 0 0 0 0;
+    width: 80%;
+    max-width: 1200px;
+}
+.slide {
+    display: none;
+}
+.image-slide {
+    width: 46%;
+    border-radius: 3%;
+}
+.modal-preview {
+    width: 50%;
+    border-radius: 5%;
+}
+.dots {
+    display: flex;
+}
+img.modal-preview {
+    opacity: 0.6;
+}
+img.active,
+.preview:hover,
+.modal-preview:hover {
+  opacity: 0.6 ;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+.close {
+    color: white;
+    position: absolute;
+    top: 45px;
+    left: 67%;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close svg:hover
+path{
+    fill: hsl(26, 100%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+}
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 46%;
+    width: 40px;
+    height: 40px;
+    padding: 14px;
+    margin-top: -50px;
+    color: white;
+    background-color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.previous{
+    margin-left: -1rem;
+}
+.next {
+    margin-left: 27rem;
+}
+.previous svg:hover
+path{
+    stroke: hsl(26, 100%, 55%);
+}
+.next svg:hover
+path{
+    stroke: hsl(26, 100%, 55%);
+}
